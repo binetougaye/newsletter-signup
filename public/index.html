@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>
+            Frontend Mentor | Newsletter sign-up form with success message
+        </title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container" class="container bg-white mx-auto">
+            <div class="row p-3 justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <h4>Stay updated!</h4>
+                    <p class="mt-3">
+                        Join 60,000+ product managers receiving monthly updates
+                        on:
+                    </p>
+                    <ul class="px-0">
+                        <li>
+                            <img
+                                class="me-2"
+                                src="./design/images/icon-list.svg"
+                                alt=""
+                            />
+                            Product discovery and building what matters
+                        </li>
+                        <li>
+                            <img
+                                class="me-2"
+                                src="./design/images/icon-list.svg"
+                                alt=""
+                            />
+                            Measuring to ensure updates are a success
+                        </li>
+                        <li>
+                            <img
+                                class="me-2"
+                                src="./design/images/icon-list.svg"
+                                alt=""
+                            />
+                            And much more
+                        </li>
+                    </ul>
+                    <form class="mt-4">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                                <label
+                                    for="exampleInputEmail"
+                                    class="form-label"
+                                    >Email address</label
+                                >
+                                <p class="error" id="errorMail"></p>
+                            </div>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail"
+                                placeholder="email@company.com"
+                            />
+                        </div>
+
+                        <button
+                            type="submit"
+                            id="submit"
+                            class="text-white w-100 rounded shadow-md"
+                        >
+                            Subscribe to monthly newsletter
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <img
+                        class="w-100"
+                        src="./design/images/illustration-sign-up-desktop.svg"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="bg-white success mx-auto">
+            <img src="./design/images/icon-success.svg" alt="" />
+            <h4 class="mt-4">Thanks for subscribing!</h4>
+            <p>
+                A confirmation email has been send to
+                <span id="email-adress"></span>. Please open it and click the
+                button inside to confirm button your subscription.
+            </p>
+            <button class="w-100 text-white rounded">Dismiss message</button>
+        </div>
+        <!-- Sign-up form start -->
+
+        <!-- <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+        <script src="script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/toastify-js"
+        ></script>
+    </body>
+</html>
